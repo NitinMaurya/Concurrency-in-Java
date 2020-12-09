@@ -36,6 +36,7 @@ public class CyclicBarrierExample {
 
             try {
                 cyclicBarrier.await();
+                System.out.println("Continuing the rest of the work..");
             } catch (InterruptedException | BrokenBarrierException e) {
                 e.printStackTrace();
             }
